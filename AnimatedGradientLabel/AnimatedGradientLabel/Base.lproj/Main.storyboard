@@ -27,13 +27,33 @@
                                 <color key="textColor" red="0.4196078479" green="0.61176472900000001" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is another LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fq-EP-9dM" customClass="AnimatedGradientLabel" customModule="AnimatedGradientLabel" customModuleProvider="target">
+                                <rect key="frame" x="103.5" y="374" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.4196078479" green="0.61176472900000001" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="0.71372550729999995" green="0.0" blue="0.6784313917" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.28627452250000002" green="0.0039215688589999999" blue="0.72156864399999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4fq-EP-9dM" firstAttribute="top" secondItem="tPL-YZ-Fp3" secondAttribute="bottom" constant="22.5" id="1co-xy-dPm"/>
                             <constraint firstItem="tPL-YZ-Fp3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HjB-Ec-baq"/>
+                            <constraint firstItem="4fq-EP-9dM" firstAttribute="centerX" secondItem="tPL-YZ-Fp3" secondAttribute="centerX" id="HmY-5q-2up"/>
                             <constraint firstItem="tPL-YZ-Fp3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T6U-Ck-xjI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="tPL-YZ-Fp3" id="0Lt-6y-5OT"/>
+                        <outlet property="secondLabel" destination="4fq-EP-9dM" id="smw-08-TaV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
